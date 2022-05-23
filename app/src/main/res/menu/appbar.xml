@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/store"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/deliveries"
+        android:title="@string/status"
+        android:icon="@drawable/ic_deliveries"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/cart"
+        android:title="buy"
+        android:icon="@drawable/ic_cart"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/notification"
+        android:title="@string/notification"
+        android:icon="@drawable/ic_notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_person"
+        app:showAsAction="always" />
+
+</menu>
