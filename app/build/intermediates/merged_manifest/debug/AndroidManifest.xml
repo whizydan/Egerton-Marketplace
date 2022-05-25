@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kerberos.egertonmarketplace"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.EgertonMarketplace" >
+        <activity
+            android:name="com.kerberos.egertonmarketplace.install.Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/splashscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kerberos.egertonmarketplace.Init"
+            android:theme="@style/Theme.EgertonMarketplace.NoActionBar" >
+        </activity>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity"
+            android:process=":error_activity" />
+
+        <provider
+            android:name="cat.ereza.customactivityoncrash.provider.CaocInitProvider"
+            android:authorities="com.kerberos.egertonmarketplace.customactivityoncrashinitprovider"
+            android:exported="false"
+            android:initOrder="101" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.kerberos.egertonmarketplace.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>
