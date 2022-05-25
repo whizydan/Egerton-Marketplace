@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.kerberos.egertonmarketplace.R
 
-class HomeFragment : Fragment() {
+class NotificationFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +18,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return inflater.inflate(R.layout.fragment_notification, container, false)
     }
 
 }

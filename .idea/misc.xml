@@ -4,14 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/backgroundbar.xml" value="0.1945" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.17" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/cart.xml" value="0.1945" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/home.xml" value="0.1945" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/ic_cart.xml" value="0.1945" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/messages.xml" value="0.1945" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/navbarbg.xml" value="0.1945" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/drawable/side_nav_bar.xml" value="0.1945" />
-        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/activity_launcher.xml" value="0.17760416666666667" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/activity_main.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/activity_splashscreen.xml" value="0.19166666666666668" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/app_bar_main.xml" value="0.19166666666666668" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/content_main.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/fragment_account.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/fragment_cart.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/fragment_deliveries.xml" value="0.19166666666666668" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/fragment_notification.xml" value="0.19166666666666668" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/layout/nav_header_main.xml" value="0.19166666666666668" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Android/EgertonMarketplace/app/src/main/res/menu/appbar.xml" value="0.19166666666666668" />

@@ -14,6 +14,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="splashscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/red</item>
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+    
 
     <style name="Theme.EgertonMarketplace.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -23,4 +28,5 @@
     <style name="Theme.EgertonMarketplace.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.EgertonMarketplace.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

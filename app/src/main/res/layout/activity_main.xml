@@ -15,11 +15,13 @@
         android:background="@drawable/backgroundbar"
         android:elevation="8dp"
         android:paddingBottom="10dp"
+        app:itemTextColor="#009688"
+        app:itemIconTint="@drawable/bottom_navigation_color_selector"
         app:labelVisibilityMode="selected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/appbar"/>
+        app:menu="@menu/appbar" />
 
 
     <FrameLayout
