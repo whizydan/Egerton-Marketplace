@@ -18,10 +18,24 @@
         android:testOnly="true"
         android:theme="@style/Theme.EgertonMarketplace" >
         <activity
+            android:name="com.kerberos.egertonmarketplace.install.auth.PhoneValidation"
+            android:exported="false" />
+        <activity
+            android:name="com.kerberos.egertonmarketplace.install.auth.ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.kerberos.egertonmarketplace.install.auth.Register"
+            android:exported="false" />
+        <activity
+            android:name="com.kerberos.egertonmarketplace.install.auth.Login"
+            android:exported="false" />
+        <activity
+            android:name="com.kerberos.egertonmarketplace.install.GetStarted"
+            android:exported="false" />
+        <activity
             android:name="com.kerberos.egertonmarketplace.install.Splash"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:label="@string/title_activity_splash"
             android:theme="@style/splashscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +45,7 @@
         </activity>
         <activity
             android:name="com.kerberos.egertonmarketplace.Init"
-            android:theme="@style/Theme.EgertonMarketplace.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.EgertonMarketplace.NoActionBar" />
 
         <uses-library
             android:name="androidx.window.extensions"
