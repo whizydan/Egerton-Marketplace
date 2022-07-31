@@ -1,21 +1,15 @@
 package com.kerberos.egertonmarketplace.install
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
-import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TextView
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.dialog.MaterialDialogs
+import androidx.appcompat.app.AppCompatActivity
 import com.kerberos.egertonmarketplace.R
 import com.kerberos.egertonmarketplace.install.auth.Login
-import com.thecode.aestheticdialogs.AestheticDialog
-import com.thecode.aestheticdialogs.DialogAnimation
-import com.thecode.aestheticdialogs.DialogStyle
-import com.thecode.aestheticdialogs.DialogType
+import com.maxkeppeler.sheets.core.SheetStyle
+import com.maxkeppeler.sheets.info.InfoSheet
 
 class GetStarted : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,17 +20,6 @@ class GetStarted : AppCompatActivity() {
         val license = findViewById<TextView>(R.id.License)
         btn.setEnabled(false)
 
-        license.setOnClickListener {
-            //show license
-            AestheticDialog.Builder(this,DialogStyle.FLAT,DialogType.INFO)
-                .setTitle("License Agreement")
-                .setMessage("bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh bluh ")
-                .setCancelable(true)
-                .setDarkMode(true)
-                .setGravity(Gravity.CENTER)
-                .setAnimation(DialogAnimation.SLIDE_UP)
-                .show()
-        }
 
         checkbox.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked){
@@ -50,5 +33,16 @@ class GetStarted : AppCompatActivity() {
             startActivity(Intent(this,Login::class.java))
             finish()
         }
+
+        license.setOnClickListener {
+            val licen = getResources().openRawResource(R.raw.license).reader().readText()
+            val bottomSheet = InfoSheet().build(this){
+                style(SheetStyle.BOTTOM_SHEET)
+                title("CHANGELOG")
+                content(licen)
+            }
+            bottomSheet.show()
+        }
     }
+
 }

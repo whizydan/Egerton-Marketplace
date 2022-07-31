@@ -17,8 +17,7 @@ class Login : AppCompatActivity() {
         val forgotpassword = findViewById<TextView>(R.id.forgotpassword)
         val signup = findViewById<TextView>(R.id.signup)
         val Init = Init()
-        val ResetPassword = ResetPassword()
-        val Register = Register()
+        val Register = PhoneActivity()
 
 
         login.setOnClickListener {
@@ -26,7 +25,9 @@ class Login : AppCompatActivity() {
         }
 
         forgotpassword.setOnClickListener {
-            startIntent(ResetPassword)
+            val intent = Intent(this,PhoneActivity::class.java)
+            intent.putExtra("dest","reset")
+            startActivity(intent)
         }
         signup.setOnClickListener {
             startIntent(Register)
@@ -35,6 +36,5 @@ class Login : AppCompatActivity() {
 
     private fun startIntent(destination : Activity){
         startActivity(Intent(this,destination::class.java))
-        finish()
     }
 }

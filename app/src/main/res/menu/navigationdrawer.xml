@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_invite"
+        android:title="Invite friends" />
+
+    <item
+        android:id="@+id/nav_support"
+        android:title="customer support" />
+
+    <item
+        android:id="@+id/nav_rate"
+        android:title="Rate our app" />
+    <item
+        android:id="@+id/nav_suggestion"
+        android:title="Make a suggestion"/>
+
+</menu>

@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">Egerton Marketplace</string>
+    <string name="app_name">Egermart</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="slogan">Get more for less🤩</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -21,5 +22,13 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="text1">Verification text sent for number </string>
-    <style name="phonenumbervalidation">Enter your phone number.A verification code shall be sent to this number.</style>
+    <string name="welcome">Welcome to egerton marketplace.Your one stop shop for new and second hand items.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or">Don\'t have an account? click here to create a new account.</string>
+
+    <style name="phonenumbervalidation">Enter your phone number.A verification code shall be sent to
+        this number.
+    </style>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
